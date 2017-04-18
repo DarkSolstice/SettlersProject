@@ -1,11 +1,16 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[Serializable]
 public enum VillageKind {Settlement,City,TradeMetropole,PoliticsMetropole,ScienceMetropole};
+[Serializable]
 public enum ResourceKind {Wool,Lumber,Ore,Brick,Grain};
+[Serializable]
 public enum CommodityKind {Coin,Cloth,Paper};
-public enum ProgressCardKind {ArchemistCard
+[Serializable]
+public enum ProgressCardKind {AlchemistCard
 	,CraneCard
 	,EngineerCard
 	,InventorCard
@@ -29,18 +34,26 @@ public enum ProgressCardKind {ArchemistCard
 	,MerchantCard
 	,MerchantFleetCard
 	,ResourceMonopolyCard
-	,TradeMonopolyCard};
+	,TradeMonopolyCard
+    ,NoCard};
 
 public enum PlayerStatus {Offline,Available,InGame,Ready};
 
 public enum EventKind {Barbarian,Trade,Politics,Science};
+[Serializable]
+public enum GamePhase {ReadyToJoin,SetupRoundOne,SetupRoundTwo,TurnFirstPhase,TurnDiceRolled,TurnRobberPirate,
+    ForcedKnightMove,TurnRobberOnly,TurnPirateOnly,TurnDesertKnight, DesertKnightMove, Intrigue, TurnMerchant};
 
-public enum GamePhase {ReadyToJoin,SetupRoundOne,SetupRoundTwo,TurnFirstPhase,TurnDiceRolled,TurnSecondPhase,Completed};
-
-public enum HarbourKind{None
-	,Generic
-	,Special};
-
+[Serializable]
+public enum HarbourKind{
+    Generic
+	,Lumber
+    ,Wool
+    ,Ore
+    ,Grain
+    ,Brick
+    ,None};
+[Serializable]
 public enum TerrainKind{Sea
 	,Desert
 	,Pasture
@@ -48,4 +61,13 @@ public enum TerrainKind{Sea
 	,Mountains
 	,Hills
 	,Fields
-	,GoldMine};
+	,GoldMine
+    ,None};
+[Serializable]
+public enum KnightLevel
+{
+    Basic,
+    Strong,
+    Mighty,
+    None
+}

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Settlers of catan", "Settlers of catan.csproj", "{FB4D748C-1F58-8721-8158-0311F7881AA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Settlers of catan.Editor", "Settlers of catan.Editor.csproj", "{A966D6C5-FE0A-42F1-E4F5-BF2E367C4FBA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB4D748C-1F58-8721-8158-0311F7881AA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB4D748C-1F58-8721-8158-0311F7881AA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB4D748C-1F58-8721-8158-0311F7881AA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB4D748C-1F58-8721-8158-0311F7881AA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A966D6C5-FE0A-42F1-E4F5-BF2E367C4FBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A966D6C5-FE0A-42F1-E4F5-BF2E367C4FBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A966D6C5-FE0A-42F1-E4F5-BF2E367C4FBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A966D6C5-FE0A-42F1-E4F5-BF2E367C4FBA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

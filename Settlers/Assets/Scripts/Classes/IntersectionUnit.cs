@@ -9,4 +9,20 @@ public abstract class IntersectionUnit : OwnableUnit
     {
 
     }
+
+    public IntersectionUnit(Player p, Guid g) : base(p, g)
+    {
+
+    }
+}
+
+[Serializable]
+public class IntersectionUnitData : OwnableUnitData
+{
+    public string location { get; set; }
+
+    public IntersectionUnitData(IntersectionUnit source) : base(source)
+    {
+        
+    }
 }

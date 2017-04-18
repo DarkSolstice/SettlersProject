@@ -1,3 +1,11 @@
+.gitignore
 Settlers/Temp
 Settlers/Library
 Settlers/obj
+<<<<<<< HEAD
+Settlers/.vs
+*.csproj
+*.sln
+=======
+Settlers/.vs
+>>>>>>> 20ef097f063dd731bad684ffc3cf96657f00acca

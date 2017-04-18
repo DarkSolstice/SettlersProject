@@ -41,6 +41,11 @@ public class statistics : NetworkBehaviour {
         for (int i = 0; i < names.Length; i++)
         {
             transform.GetChild(0).GetChild(10 + i).GetChild(0).GetComponent<Text>().text = names[i];
+            if (names[i].Equals(""))
+            {
+                //disable useless info
+                transform.GetChild(0).GetChild(10 + i).gameObject.SetActive(false);
+            }
         }
     }
 }

@@ -30,11 +30,17 @@ public class CameraBehaviour : MonoBehaviour {
         }
         if (Input.GetAxis("Mouse ScrollWheel") < 0)
         {
-            gameObject.GetComponent<Camera>().orthographicSize += 50;
+            if(gameObject.GetComponent<Camera>().orthographicSize < 2500)
+            {
+                gameObject.GetComponent<Camera>().orthographicSize += 50;
+            }   
         }
         if (Input.GetAxis("Mouse ScrollWheel") > 0)
         {
-            gameObject.GetComponent<Camera>().orthographicSize -= 50;
+            if (gameObject.GetComponent<Camera>().orthographicSize > 600)
+            {
+                gameObject.GetComponent<Camera>().orthographicSize -= 50;
+            }
         }
     }
 
